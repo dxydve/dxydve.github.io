@@ -1,0 +1,720 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>个人博客 | 分享我的思考与创意</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- 头部 -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <a href="#" class="logo">
+                    <span class="logo-text">Blog<span class="highlight">Zone</span></span>
+                </a>
+                <nav class="nav">
+                    <ul class="nav-list">
+                        <li class="nav-item"><a href="#" class="nav-link active">首页</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link">关于我</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link">分类</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link">联系方式</a></li>
+                    </ul>
+                </nav>
+                <div class="header-actions">
+                    <form class="search-form">
+                        <input type="text" placeholder="搜索文章..." class="search-input">
+                        <button type="submit" class="search-btn">
+                            <i class="fas fa-search"></i>
+                        </button>
+                    </form>
+                    <button class="menu-toggle">
+                        <i class="fas fa-bars"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- 英雄区域 -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="hero-title">探索科技与创意的边界</h1>
+                <p class="hero-subtitle">分享前沿科技、编程技术与数字创意的深度思考</p>
+                <a href="#" class="btn btn-primary">探索科技世界</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- 主要内容 -->
+    <main class="main">
+        <div class="container">
+            <div class="main-content">
+                <!-- 文章列表 -->
+                <section class="articles">
+                    <h2 class="section-title">最新文章</h2>
+                    <div class="articles-grid">
+                        <!-- 文章卡片 1 -->
+                        <article class="article-card" data-article-id="1">
+                            <div class="article-img">
+                                <img src="https://picsum.photos/600/400?random=1" alt="文章图片">
+                            </div>
+                            <div class="article-content">
+                                <div class="article-meta">
+                                    <span class="category">AI技术</span>
+                                    <span class="date">2026-01-08</span>
+                                </div>
+                                <h3 class="article-title">
+                                    <a href="#">AI大模型时代的前端开发变革</a>
+                                </h3>
+                                <p class="article-excerpt">
+                                    探讨AI大模型如何改变前端开发流程，从代码生成到智能调试，以及如何利用AI工具提升开发效率和代码质量。
+                                </p>
+                                <a href="#" class="article-read-more">阅读更多 <i class="fas fa-arrow-right"></i></a>
+                            </div>
+                            <!-- 文章完整内容 -->
+                            <div class="article-full-content">
+                                <div class="article-full-header">
+                                    <h2>AI大模型时代的前端开发变革</h2>
+                                    <div class="article-meta">
+                                        <span class="category">AI技术</span>
+                                        <span class="date">2026-01-08</span>
+                                        <span class="author">作者：邓兴运</span>
+                                    </div>
+                                </div>
+                                <div class="article-full-body">
+                                    <p>随着AI大模型技术的快速发展，前端开发领域正在经历前所未有的变革。从代码生成到智能调试，从UI设计到用户体验优化，AI工具正在逐步渗透到前端开发的各个环节，为开发者带来全新的工作方式和效率提升。</p>
+                                    
+                                    <h3>AI代码生成：从辅助到主力</h3>
+                                    <p>过去，前端开发者主要依赖自己的经验和知识编写代码。现在，借助GitHub Copilot、ChatGPT等AI工具，开发者可以通过自然语言描述快速生成高质量的代码片段，甚至完整的组件。这不仅减少了重复劳动，还能帮助开发者学习新的编程技巧和最佳实践。</p>
+                                    
+                                    <h3>智能调试：快速定位问题</h3>
+                                    <p>调试是前端开发中最耗时的环节之一。AI工具可以分析错误信息、代码上下文，甚至运行时状态，快速定位问题所在，并提供修复建议。例如，一些AI调试工具可以识别内存泄漏、性能瓶颈等复杂问题，大大缩短了调试时间。</p>
+                                    
+                                    <h3>UI/UX设计：AI辅助创作</h3>
+                                    <p>AI工具在UI设计领域也发挥着越来越重要的作用。从生成设计灵感、创建布局方案到优化用户体验，AI可以与设计师协作，提供多样化的设计选择。前端开发者可以直接使用AI生成的设计资源，减少了与设计师的沟通成本。</p>
+                                    
+                                    <h3>性能优化：智能分析与建议</h3>
+                                    <p>前端性能优化需要丰富的经验和对浏览器工作原理的深入理解。AI工具可以分析应用的性能数据，识别瓶颈，并提供针对性的优化建议，如代码分割、资源预加载、缓存策略等，帮助开发者构建更快速、更可靠的应用。</p>
+                                    
+                                    <h3>未来展望：AI与开发者的协作</h3>
+                                    <p>AI大模型不会取代前端开发者，而是会成为开发者的强大助手。未来，前端开发者需要学会与AI工具协作，利用AI的能力解决重复性工作和复杂问题，将更多精力投入到创造性的设计和架构决策中。</p>
+                                    
+                                    <p>通过拥抱AI技术，前端开发者可以提升工作效率，降低开发成本，同时创造出更优质的用户体验。在这个AI大模型时代，持续学习和适应新技术将成为前端开发者保持竞争力的关键。</p>
+                                </div>
+                                <button class="btn btn-primary article-back-btn">返回列表</button>
+                            </div>
+                        </article>
+
+                        <!-- 文章卡片 2 -->
+                        <article class="article-card">
+                            <div class="article-img">
+                                <img src="https://picsum.photos/600/400?random=2" alt="文章图片">
+                            </div>
+                            <div class="article-content">
+                                <div class="article-meta">
+                                    <span class="category">Web技术</span>
+                                    <span class="date">2026-01-07</span>
+                                </div>
+                                <h3 class="article-title">
+                                    <a href="#">WebAssembly：前端性能优化的新边界</a>
+                                </h3>
+                                <p class="article-excerpt">
+                                    深入解析WebAssembly的工作原理和应用场景，以及如何使用WASM提升前端应用的性能，实现接近原生应用的体验。
+                                </p>
+                                <a href="#" class="article-read-more">阅读更多 <i class="fas fa-arrow-right"></i></a>
+                            </div>
+                        </article>
+
+                        <!-- 文章卡片 3 -->
+                        <article class="article-card">
+                            <div class="article-img">
+                                <img src="https://picsum.photos/600/400?random=3" alt="文章图片">
+                            </div>
+                            <div class="article-content">
+                                <div class="article-meta">
+                                    <span class="category">区块链</span>
+                                    <span class="date">2026-01-06</span>
+                                </div>
+                                <h3 class="article-title">
+                                    <a href="#">区块链技术在前端的创新应用</a>
+                                </h3>
+                                <p class="article-excerpt">
+                                    探索区块链技术如何与前端开发结合，构建去中心化应用(DApp)，以及Web3.0时代前端开发者的新机遇与挑战。
+                                </p>
+                                <a href="#" class="article-read-more">阅读更多 <i class="fas fa-arrow-right"></i></a>
+                            </div>
+                        </article>
+
+                        <!-- 文章卡片 4 -->
+                        <article class="article-card">
+                            <div class="article-img">
+                                <img src="https://picsum.photos/600/400?random=4" alt="文章图片">
+                            </div>
+                            <div class="article-content">
+                                <div class="article-meta">
+                                    <span class="category">AR/VR</span>
+                                    <span class="date">2026-01-05</span>
+                                </div>
+                                <h3 class="article-title">
+                                    <a href="#">WebXR：构建沉浸式Web体验的技术指南</a>
+                                </h3>
+                                <p class="article-excerpt">
+                                    详细介绍WebXR API的使用方法，以及如何构建基于浏览器的AR/VR应用，开启Web沉浸式体验的新时代。
+                                </p>
+                                <a href="#" class="article-read-more">阅读更多 <i class="fas fa-arrow-right"></i></a>
+                            </div>
+                        </article>
+
+                        <!-- 文章卡片 5 -->
+                        <article class="article-card">
+                            <div class="article-img">
+                                <img src="https://picsum.photos/600/400?random=5" alt="文章图片">
+                            </div>
+                            <div class="article-content">
+                                <div class="article-meta">
+                                    <span class="category">性能优化</span>
+                                    <span class="date">2026-01-04</span>
+                                </div>
+                                <h3 class="article-title">
+                                    <a href="#">现代前端性能优化的完整指南</a>
+                                </h3>
+                                <p class="article-excerpt">
+                                    从网络请求到渲染性能，从代码分割到缓存策略，全面解析现代前端应用的性能优化技术和最佳实践。
+                                </p>
+                                <a href="#" class="article-read-more">阅读更多 <i class="fas fa-arrow-right"></i></a>
+                            </div>
+                        </article>
+
+                        <!-- 文章卡片 6 -->
+                        <article class="article-card">
+                            <div class="article-img">
+                                <img src="https://picsum.photos/600/400?random=6" alt="文章图片">
+                            </div>
+                            <div class="article-content">
+                                <div class="article-meta">
+                                    <span class="category">DevOps</span>
+                                    <span class="date">2026-01-03</span>
+                                </div>
+                                <h3 class="article-title">
+                                    <a href="#">前端CI/CD流程的自动化实践</a>
+                                </h3>
+                                <p class="article-excerpt">
+                                    分享前端项目的持续集成和持续部署实践，包括代码质量检查、自动化测试、构建优化和部署策略的完整流程。
+                                </p>
+                                <a href="#" class="article-read-more">阅读更多 <i class="fas fa-arrow-right"></i></a>
+                            </div>
+                        </article>
+                    </div>
+                </section>
+
+                <!-- 分类区域 -->
+                <section class="categories">
+                    <h2 class="section-title">文章分类</h2>
+                    <div class="categories-grid">
+                        <a href="#" class="category-card">
+                            <div class="category-icon">
+                                <i class="fas fa-robot"></i>
+                            </div>
+                            <h3 class="category-name">AI技术</h3>
+                            <p class="category-count">15 篇文章</p>
+                        </a>
+                        <a href="#" class="category-card">
+                            <div class="category-icon">
+                                <i class="fas fa-globe"></i>
+                            </div>
+                            <h3 class="category-name">Web技术</h3>
+                            <p class="category-count">18 篇文章</p>
+                        </a>
+                        <a href="#" class="category-card">
+                            <div class="category-icon">
+                                <i class="fas fa-cube"></i>
+                            </div>
+                            <h3 class="category-name">AR/VR</h3>
+                            <p class="category-count">10 篇文章</p>
+                        </a>
+                        <a href="#" class="category-card">
+                            <div class="category-icon">
+                                <i class="fas fa-link"></i>
+                            </div>
+                            <h3 class="category-name">区块链</h3>
+                            <p class="category-count">8 篇文章</p>
+                        </a>
+                        <a href="#" class="category-card">
+                            <div class="category-icon">
+                                <i class="fas fa-tachometer-alt"></i>
+                            </div>
+                            <h3 class="category-name">性能优化</h3>
+                            <p class="category-count">12 篇文章</p>
+                        </a>
+                        <a href="#" class="category-card">
+                            <div class="category-icon">
+                                <i class="fas fa-cogs"></i>
+                            </div>
+                            <h3 class="category-name">DevOps</h3>
+                            <p class="category-count">9 篇文章</p>
+                        </a>
+                    </div>
+                </section>
+            </div>
+
+            <!-- 侧边栏 -->
+            <aside class="sidebar">
+                <!-- 关于我 -->
+                <section class="widget">
+                    <h3 class="widget-title">关于我</h3>
+                    <div class="about-me">
+                        <div class="about-me-img">
+                            <img src="https://picsum.photos/200/200?random=7" alt="我的头像">
+                        </div>
+                        <h4 class="about-me-name">邓兴运</h4>
+                        <p class="about-me-bio">
+                            热爱技术和创作，专注于分享个人见解和创意内容，致力于打造有个性、有价值的数字空间。
+                        </p>
+                        <div class="social-links">
+                            <a href="#" class="social-link"><i class="fab fa-github"></i></a>
+                            <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                            <a href="#" class="social-link"><i class="fab fa-linkedin"></i></a>
+                            <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- 热门文章 -->
+                <section class="widget">
+                    <h3 class="widget-title">热门文章</h3>
+                    <ul class="popular-articles">
+                        <li class="popular-article">
+                            <a href="#" class="popular-article-link">
+                                <div class="popular-article-img">
+                                    <img src="https://picsum.photos/100/100?random=8" alt="文章图片">
+                                </div>
+                                <div class="popular-article-content">
+                                    <h4 class="popular-article-title">前端开发的未来趋势</h4>
+                                    <p class="popular-article-date">2024-01-08</p>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="popular-article">
+                            <a href="#" class="popular-article-link">
+                                <div class="popular-article-img">
+                                    <img src="https://picsum.photos/100/100?random=9" alt="文章图片">
+                                </div>
+                                <div class="popular-article-content">
+                                    <h4 class="popular-article-title">现代UI设计的核心原则</h4>
+                                    <p class="popular-article-date">2024-01-07</p>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="popular-article">
+                            <a href="#" class="popular-article-link">
+                                <div class="popular-article-img">
+                                    <img src="https://picsum.photos/100/100?random=10" alt="文章图片">
+                                </div>
+                                <div class="popular-article-content">
+                                    <h4 class="popular-article-title">CSS Grid布局完全指南</h4>
+                                    <p class="popular-article-date">2024-01-05</p>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                </section>
+
+                <!-- 标签云 -->
+                <section class="widget">
+                    <h3 class="widget-title">标签云</h3>
+                    <div class="tags">
+                        <a href="#" class="tag">AI大模型</a>
+                        <a href="#" class="tag">WebAssembly</a>
+                        <a href="#" class="tag">WebXR</a>
+                        <a href="#" class="tag">区块链</a>
+                        <a href="#" class="tag">前端性能</a>
+                        <a href="#" class="tag">CI/CD</a>
+                        <a href="#" class="tag">TypeScript</a>
+                        <a href="#" class="tag">React</a>
+                        <a href="#" class="tag">Vue</a>
+                        <a href="#" class="tag">Node.js</a>
+                        <a href="#" class="tag">PWA</a>
+                        <a href="#" class="tag">GraphQL</a>
+                        <a href="#" class="tag">微前端</a>
+                        <a href="#" class="tag">Serverless</a>
+                        <a href="#" class="tag">边缘计算</a>
+                    </div>
+                </section>
+            </aside>
+        </div>
+    </main>
+
+    <!-- 订阅区域 -->
+    <section class="subscribe">
+        <div class="container">
+            <div class="subscribe-content">
+                <h2 class="subscribe-title">订阅我的博客</h2>
+                <p class="subscribe-subtitle">获取最新文章和独家内容</p>
+                <form class="subscribe-form">
+                    <input type="email" placeholder="输入你的邮箱地址" class="subscribe-input">
+                    <button type="submit" class="btn btn-primary">订阅</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- 页脚 -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-info">
+                    <a href="#" class="footer-logo">
+                        <span class="logo-text">Blog<span class="highlight">Zone</span></span>
+                    </a>
+                    <p class="footer-description">
+                        分享技术、设计与生活的思考，探索数字世界的无限可能。
+                    </p>
+                    <div class="footer-social">
+                        <a href="#" class="social-link"><i class="fab fa-github"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <h3 class="footer-links-title">快速链接</h3>
+                    <ul class="footer-links-list">
+                        <li><a href="#" class="footer-link">首页</a></li>
+                        <li><a href="#" class="footer-link">关于我</a></li>
+                        <li><a href="#" class="footer-link">分类</a></li>
+                        <li><a href="#" class="footer-link">联系方式</a></li>
+                    </ul>
+                </div>
+                <div class="footer-categories">
+                    <h3 class="footer-links-title">文章分类</h3>
+                    <ul class="footer-links-list">
+                        <li><a href="#" class="footer-link">技术</a></li>
+                        <li><a href="#" class="footer-link">设计</a></li>
+                        <li><a href="#" class="footer-link">生活</a></li>
+                        <li><a href="#" class="footer-link">创意</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h3 class="footer-links-title">联系方式</h3>
+                    <ul class="footer-links-list">
+                        <li><a href="#" class="footer-link"><i class="fas fa-envelope"></i> contact@blogzone.com</a></li>
+                        <li><a href="#" class="footer-link"><i class="fas fa-map-marker-alt"></i> 北京市朝阳区</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p class="footer-copyright">
+                    &copy; 2024 BlogZone. 保留所有权利。
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- 回到顶部按钮 -->
+    <button class="back-to-top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- JavaScript -->
+    <script>
+        // 回到顶部按钮
+        const backToTopBtn = document.querySelector('.back-to-top');
+        window.addEventListener('scroll', () => {
+            if (window.pageYOffset > 300) {
+                backToTopBtn.style.display = 'flex';
+            } else {
+                backToTopBtn.style.display = 'none';
+            }
+        });
+        backToTopBtn.addEventListener('click', () => {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+
+        // 移动端菜单
+        const menuToggle = document.querySelector('.menu-toggle');
+        const nav = document.querySelector('.nav');
+        menuToggle.addEventListener('click', () => {
+            nav.classList.toggle('active');
+        });
+
+        // 文章展示功能
+        document.addEventListener('DOMContentLoaded', function() {
+            // 模拟文章数据
+            const articles = [
+                {
+                    id: 1,
+                    title: "前端开发的未来趋势",
+                    excerpt: "探索前端开发领域的最新技术趋势，从AI辅助开发到新的框架和工具，了解未来前端发展的方向。",
+                    category: "技术",
+                    date: "2024-01-08",
+                    image: "https://picsum.photos/600/400?random=1"
+                },
+                {
+                    id: 2,
+                    title: "现代UI设计的核心原则",
+                    excerpt: "解析现代用户界面设计的核心原则，包括排版、色彩、间距和交互，帮助你创建更美观、更易用的设计。",
+                    category: "设计",
+                    date: "2024-01-07",
+                    image: "https://picsum.photos/600/400?random=2"
+                },
+                {
+                    id: 3,
+                    title: "如何在忙碌的工作中保持创造力",
+                    excerpt: "分享一些实用的技巧和方法，帮助你在忙碌的工作和生活中保持创造力，激发新的想法和灵感。",
+                    category: "生活",
+                    date: "2024-01-06",
+                    image: "https://picsum.photos/600/400?random=3"
+                },
+                {
+                    id: 4,
+                    title: "CSS Grid布局完全指南",
+                    excerpt: "详细介绍CSS Grid布局的使用方法和技巧，从基础概念到高级应用，帮助你掌握这一强大的布局工具。",
+                    category: "技术",
+                    date: "2024-01-05",
+                    image: "https://picsum.photos/600/400?random=4"
+                },
+                {
+                    id: 5,
+                    title: "响应式设计的最佳实践",
+                    excerpt: "探讨响应式网页设计的最佳实践，包括媒体查询、弹性布局和移动优先设计，确保你的网站在所有设备上都能完美显示。",
+                    category: "设计",
+                    date: "2024-01-04",
+                    image: "https://picsum.photos/600/400?random=5"
+                },
+                {
+                    id: 6,
+                    title: "数字游民的工作与生活平衡",
+                    excerpt: "分享数字游民的工作方式和生活哲学，探讨如何在自由工作的同时保持健康的生活平衡，提高工作效率和生活质量。",
+                    category: "生活",
+                    date: "2024-01-03",
+                    image: "https://picsum.photos/600/400?random=6"
+                }
+            ];
+
+            // 分类导航功能
+            const categoryCards = document.querySelectorAll('.category-card');
+            const articleCards = document.querySelectorAll('.article-card');
+
+            categoryCards.forEach(card => {
+                card.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    const category = this.querySelector('.category-name').textContent;
+                    
+                    // 高亮选中的分类
+                    categoryCards.forEach(c => c.classList.remove('active'));
+                    this.classList.add('active');
+                    
+                    // 过滤文章
+                    articleCards.forEach((card, index) => {
+                        const articleCategory = card.querySelector('.category').textContent;
+                        if (category === '全部' || articleCategory === category) {
+                            card.style.display = 'block';
+                            // 添加动画效果
+                            setTimeout(() => {
+                                card.style.opacity = '1';
+                                card.style.transform = ' translateY(0)';
+                            }, 100 * index);
+                        } else {
+                            card.style.opacity = '0';
+                            card.style.transform = 'translateY(20px)';
+                            setTimeout(() => {
+                                card.style.display = 'none';
+                            }, 300);
+                        }
+                    });
+                });
+            });
+
+            // 搜索功能
+            const searchForm = document.querySelector('.search-form');
+            const searchInput = document.querySelector('.search-input');
+
+            searchForm.addEventListener('submit', function(e) {
+                e.preventDefault();
+                const searchTerm = searchInput.value.toLowerCase().trim();
+                
+                if (searchTerm) {
+                    articleCards.forEach((card, index) => {
+                        const title = card.querySelector('.article-title a').textContent.toLowerCase();
+                        const excerpt = card.querySelector('.article-excerpt').textContent.toLowerCase();
+                        
+                        if (title.includes(searchTerm) || excerpt.includes(searchTerm)) {
+                            card.style.display = 'block';
+                            // 添加动画效果
+                            setTimeout(() => {
+                                card.style.opacity = '1';
+                                card.style.transform = 'translateY(0)';
+                            }, 100 * index);
+                        } else {
+                            card.style.opacity = '0';
+                            card.style.transform = 'translateY(20px)';
+                            setTimeout(() => {
+                                card.style.display = 'none';
+                            }, 300);
+                        }
+                    });
+                } else {
+                    // 重置搜索
+                    articleCards.forEach((card, index) => {
+                        card.style.display = 'block';
+                        setTimeout(() => {
+                            card.style.opacity = '1';
+                            card.style.transform = 'translateY(0)';
+                        }, 100 * index);
+                    });
+                }
+            });
+
+            // 文章卡片悬停效果
+            articleCards.forEach(card => {
+                card.addEventListener('mouseenter', function() {
+                    this.style.transform = 'translateY(-5px)';
+                    this.style.boxShadow = '0 5px 20px rgba(0, 0, 0, 0.15)';
+                });
+                
+                card.addEventListener('mouseleave', function() {
+                    this.style.transform = 'translateY(0)';
+                    this.style.boxShadow = '0 2px 10px rgba(0, 0, 0, 0.1)';
+                });
+            });
+
+            // 订阅功能
+            const subscribeForm = document.querySelector('.subscribe-form');
+            const subscribeInput = document.querySelector('.subscribe-input');
+
+            subscribeForm.addEventListener('submit', function(e) {
+                e.preventDefault();
+                const email = subscribeInput.value.trim();
+                
+                if (email && validateEmail(email)) {
+                    // 模拟订阅成功
+                    subscribeInput.value = '';
+                    alert('订阅成功！感谢您的关注。');
+                } else {
+                    alert('请输入有效的邮箱地址。');
+                }
+            });
+
+            // 邮箱验证函数
+            function validateEmail(email) {
+                const re = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+                return re.test(email);
+            }
+
+            // 页面加载动画
+            window.addEventListener('load', function() {
+                const fadeElements = document.querySelectorAll('.article-card, .category-card, .widget');
+                
+                fadeElements.forEach((element, index) => {
+                    setTimeout(() => {
+                        element.style.opacity = '1';
+                        element.style.transform = 'translateY(0)';
+                    }, 100 * index);
+                });
+            });
+
+            // 滚动动画
+            function handleScrollAnimation() {
+                const scrollElements = document.querySelectorAll('.scroll-reveal');
+                
+                scrollElements.forEach(element => {
+                    const elementTop = element.getBoundingClientRect().top;
+                    const windowHeight = window.innerHeight;
+                    
+                    if (elementTop < windowHeight - 100) {
+                        element.classList.add('active');
+                    }
+                });
+            }
+
+            // 初始化滚动动画
+            window.addEventListener('scroll', handleScrollAnimation);
+            window.addEventListener('load', handleScrollAnimation);
+
+            // 平滑滚动
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    
+                    const targetId = this.getAttribute('href');
+                    if (targetId === '#') return;
+                    
+                    const targetElement = document.querySelector(targetId);
+                    if (targetElement) {
+                        window.scrollTo({
+                            top: targetElement.offsetTop - 80,
+                            behavior: 'smooth'
+                        });
+                    }
+                });
+            });
+
+            // 导航栏滚动效果
+            window.addEventListener('scroll', function() {
+                const header = document.querySelector('.header');
+                
+                if (window.scrollY > 100) {
+                    header.style.background = 'rgba(255, 255, 255, 0.95)';
+                    header.style.backdropFilter = 'blur(10px)';
+                    header.style.boxShadow = '0 2px 20px rgba(0, 0, 0, 0.1)';
+                } else {
+                    header.style.background = 'var(--white)';
+                    header.style.backdropFilter = 'none';
+                    header.style.boxShadow = 'var(--shadow)';
+                }
+            });
+
+            // 文章卡片点击效果
+            articleCards.forEach(card => {
+                card.addEventListener('click', function(e) {
+                    // 只有点击文章标题或阅读更多链接时才显示完整内容
+                    if (e.target.closest('.article-title') || e.target.closest('.article-read-more')) {
+                        const fullContent = this.querySelector('.article-full-content');
+                        if (fullContent) {
+                            fullContent.classList.add('active');
+                            document.body.style.overflow = 'hidden';
+                        }
+                    }
+                });
+            });
+
+            // 返回列表按钮点击事件
+            document.querySelectorAll('.article-back-btn').forEach(btn => {
+                btn.addEventListener('click', function(e) {
+                    const fullContent = this.closest('.article-full-content');
+                    if (fullContent) {
+                        fullContent.classList.remove('active');
+                        document.body.style.overflow = 'auto';
+                    }
+                });
+            });
+
+            // 标签点击效果
+            const tags = document.querySelectorAll('.tag');
+            tags.forEach(tag => {
+                tag.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    const tagText = this.textContent;
+                    
+                    // 高亮选中的标签
+                    tags.forEach(t => t.classList.remove('active'));
+                    this.classList.add('active');
+                    
+                    // 模拟标签搜索
+                    alert(`搜索标签: ${tagText}`);
+                });
+            });
+        });
+    </script>
+</body>
+</html>
